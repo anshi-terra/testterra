@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.763480524966">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.763483221640">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Interpolate Points</title>
     <meta name="title" content="Interpolate Points">
-    <meta name="description" content="Using the Interpolate Points template, objects can move along a specified path defined by coordinates.">
+    <meta name="description" content="Using the Interpolate Points template, objects can move along aspecified path defined by coordinates.">
 
     <!-- Canonical -->
     <link rel="canonical" href="/adding-behaviors/list-of-behaviour-templates/interpolate-points/">
@@ -20,21 +20,21 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="/adding-behaviors/list-of-behaviour-templates/interpolate-points/">
     <meta property="og:title" content="Interpolate Points">
-    <meta property="og:description" content="Using the Interpolate Points template, objects can move along a specified path defined by coordinates.">
+    <meta property="og:description" content="Using the Interpolate Points template, objects can move along aspecified path defined by coordinates.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="/adding-behaviors/list-of-behaviour-templates/interpolate-points/">
     <meta property="twitter:title" content="Interpolate Points">
-    <meta property="twitter:description" content="Using the Interpolate Points template, objects can move along a specified path defined by coordinates.">
+    <meta property="twitter:description" content="Using the Interpolate Points template, objects can move along aspecified path defined by coordinates.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../resources/css/retype.css?v=3.5.0.763480524966" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.763483221640" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.763480524966" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.763483221640" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.763480524966" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.763483221640" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -169,14 +169,14 @@
         <span>Interpolate Points</span>
     </h1>
 </doc-anchor-target>
-<p>Using the Interpolate Points template, objects can move along a <mark style="color:purple;">specified path defined by coordinates.</mark> This movement can be either <mark style="color:purple;">linear</mark> between points or <mark style="color:purple;">curved</mark>, allowing for versatile motion. </p>
+<p>Using the Interpolate Points template, objects can move along aspecified path defined by coordinates. This movement can be eitherlinear between points orcurved, allowing for versatile motion. </p>
 <p>Moreover, objects can dynamically rotate to ensure that a particular face of the object always advances towards the path, mimicking how our face naturally aligns with our direction of movement.</p>
 <p>To add this behavior, follow these steps: </p>
 <ul>
-<li><mark style="color:yellow;">Step 1</mark>: Select the object or trigger to which you want to apply this template</li>
-<li><mark style="color:yellow;">Step 2</mark>: Enter the following parameters to customize the behavior:</li>
+<li>Step 1: Select the object or trigger to which you want to apply this template</li>
+<li>Step 2: Enter the following parameters to customize the behavior:</li>
 </ul>
-<table><thead><tr><th width="290">Parameters</th><th>Description</th></tr></thead><tbody><tr><td>Move On</td><td><p>You can define the trigger that will activate the template<br>- When the <mark style="color:yellow;">game starts</mark></p><p>- When a different object touches the <mark style="color:yellow;">object</mark><br>- After a broadcast message has been received by the <mark style="color:yellow;">object</mark><br>- When the player touches the <mark style="color:yellow;">object</mark><br>- When the object is <mark style="color:yellow;">clicked</mark></p></td></tr><tr><td>Points</td><td>You can define multiple points through which the object will move in a path</td></tr><tr><td>Speed</td><td>You can define the speed of object movement</td></tr><tr><td>Turn To Points</td><td>This one makes sure that <mark style="color:purple;">only one face on the object faces the forward direction</mark>. The orientation of the object changes such that one particular face/side of the object is facing forward throughout the whole movement.</td></tr><tr><td>Delay at Point</td><td>This gives a <mark style="color:purple;">gap of a few seconds</mark> before the object changes direction of motion. The object is <mark style="color:purple;">stationary</mark> during those few seconds.</td></tr><tr><td>Loop</td><td>If you check this, the movement is repeated until the template is deactivated</td></tr><tr><td>Is Curve</td><td>Changes the linear mobility path of the object to a <mark style="color:purple;">curved one.</mark></td></tr><tr><td>Interpolate Types</td><td>You can choose between two types of movements:<br>- One direction: The object moves along the path in <mark style="color:purple;">only forward motion</mark><br>- Ping Pong: The object moves along the path in a <mark style="color:purple;">back-and-forth motion</mark></td></tr><tr><td>Broadcast Type</td><td><p>You can choose the instances when a broadcast will be sent. There are three options to choose from:</p><ul><li>Never - No broadcast to be sent</li><li>End - Send a broadcast after completing <mark style="color:purple;">one whole movement</mark> from the start to the endpoint</li><li>At Every Pause - Send a broadcast <mark style="color:purple;">every</mark> <mark style="color:purple;">time</mark> the <mark style="color:purple;">object pauses</mark></li></ul></td></tr><tr><td>Broadcast</td><td>Choose to enter a broadcast that can be used as a trigger for any other behavior. <br><code>The broadcast is sent on the above mentioned instances.</code></td></tr></tbody></table>
+<table><thead><tr><th width="290">Parameters</th><th>Description</th></tr></thead><tbody><tr><td>Move On</td><td><p>You can define the trigger that will activate the template<br>- When the game starts</p><p>- When a different object touches the object<br>- After a broadcast message has been received by the object<br>- When the player touches the object<br>- When the object is clicked</p></td></tr><tr><td>Points</td><td>You can define multiple points through which the object will move in a path</td></tr><tr><td>Speed</td><td>You can define the speed of object movement</td></tr><tr><td>Turn To Points</td><td>This one makes sure thatonly one face on the object faces the forward direction. The orientation of the object changes such that one particular face/side of the object is facing forward throughout the whole movement.</td></tr><tr><td>Delay at Point</td><td>This gives agap of a few seconds before the object changes direction of motion. The object isstationary during those few seconds.</td></tr><tr><td>Loop</td><td>If you check this, the movement is repeated until the template is deactivated</td></tr><tr><td>Is Curve</td><td>Changes the linear mobility path of the object to acurved one.</td></tr><tr><td>Interpolate Types</td><td>You can choose between two types of movements:<br>- One direction: The object moves along the path inonly forward motion<br>- Ping Pong: The object moves along the path in aback-and-forth motion</td></tr><tr><td>Broadcast Type</td><td><p>You can choose the instances when a broadcast will be sent. There are three options to choose from:</p><ul><li>Never - No broadcast to be sent</li><li>End - Send a broadcast after completingone whole movement from the start to the endpoint</li><li>At Every Pause - Send a broadcasteverytime theobject pauses</li></ul></td></tr><tr><td>Broadcast</td><td>Choose to enter a broadcast that can be used as a trigger for any other behavior. <br><code>The broadcast is sent on the above mentioned instances.</code></td></tr></tbody></table>
 
                                 
                                 <!-- Required only on API pages -->
